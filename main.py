@@ -21,6 +21,6 @@ def main():
     for i in sorted_list:
         if i["char"].isalpha():
             print(f"{i['char']}: {i['num']}")
-
+ 
 if __name__ == "__main__":
     main()

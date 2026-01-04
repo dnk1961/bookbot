@@ -12,11 +12,12 @@ def sort_on(items):
     return items["num"]
 
 def sort_character_count(character_dict):
-    sorted_list = []
-    for k,v in character_dict.items():
-        dict_template = {"char":k, "num":v}
-        sorted_list.append(dict_template)
-    sorted_list.sort(reverse=True, key=sort_on)
+    # sorted_list = []
+    # for k,v in character_dict.items():
+    #     dict_template = {"char":k, "num":v}
+    #     sorted_list.append(dict_template)
+    # sorted_list.sort(reverse=True, key=sort_on)
     
-    return sorted_list
+    # return sorted_list
 
+    return [{"char": k, "num":v} for k,v in character_dict.items()]
